@@ -1,6 +1,7 @@
 # vue templateについて
 
-vueプロジェクトのテンプレート  
+Vueプロジェクトのテンプレート。  
+クローンした後にVisualStudioCode上ですぐに開発できるようにセットアップしている。  
 
 ## VueCLI Settings
 
@@ -51,6 +52,11 @@ or
 
 Command(Ctrl) + Shift + B
 
+### Watch project
+```
+npm run watch
+```
+
 ### Run your tests
 ```
 npm run test
@@ -68,3 +74,7 @@ npm run test:unit
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+# License
+
+MIT
