@@ -1,12 +1,18 @@
 <template>
   <div id="app">
     <h1>{{ title }}</h1>
+    <v-button @click="handleClick">test</v-button>
+    <v-input v-model="input" @input="handleInput"></v-input>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue"
-// import HelloWorld from "./components/HelloWorld.vue"
+import Button from "./components/Button.vue"
+import Input from "./components/Input.vue"
+
+Vue.component( "VButton", Button )
+Vue.component( "VInput", Input )
 
 export default Vue.extend({
   name: "app",
@@ -16,8 +22,17 @@ export default Vue.extend({
   data() {
     return {
       title: "Hello VueCLI",
+      input: "test",
     }
   },
+    methods: {
+        handleClick(evt: Event) {
+          console.log("text")
+        },
+        handleInput(evt: Event) {
+          console.log(this.input)
+        },
+    },
 })
 </script>
 
